@@ -10,16 +10,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="jcportfolio.css">
+    <link rel="stylesheet" href="loader.css">
     <link rel="icon" href="./images/logo.jpeg" type="image/x-icon">
 
+    
 </head>
-<body>
 
-    <label  id="dark-change"></label>
+<body> 
 
+    <div id="preloader">
+		<div class="loading">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</div>
+    
 <!-- custom cursors  -->
-<div class="cursor-1"></div>
+<div class="cursor-1"></div>z
 <div class="cursor-2"></div>
 
 
@@ -53,6 +64,7 @@
 <!-- home section starts  -->
 
 <section class="home" id="home">
+    
 
     <div class="content">
         <div class="wrapper">
@@ -388,6 +400,12 @@ for (let i = 0; i < sections.length; i++) {
   });
 }
     </script>
+
+<script>
+    setTimeout(function() {
+        document.getElementById('preloader').style.display = 'none';
+    }, 2000);
+</script>
     
 </body>
 </html>
