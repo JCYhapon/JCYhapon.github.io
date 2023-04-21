@@ -121,7 +121,7 @@ header{
     padding:15rem 2rem;
     width:30rem;
     text-align: justify;
-    border: 2px solid rgb(39, 35, 35);
+    
     box-shadow: 20px 2px 10px #272525;
 }
 
@@ -131,17 +131,11 @@ header .logo img{
     aspect-ratio: 5/5;
 }
 
-header .logo{
-    text-transform: uppercase;
-    color:rgb(0, 0, 0);
-    font-size: 3.5rem;
-    font-weight: bolder;
-    letter-spacing: 10px;
-}
+
 
 header .logo img{
     width: 20rem;
-    margin-bottom: 0;
+    margin-bottom: -3rem;
     margin-top: -2rem;
 }
 
@@ -445,6 +439,7 @@ header .follow a:hover{
     display: flex;
     flex-wrap: wrap;
     gap:5rem;
+    margin-left: 4rem;
 }
 
 .about .row-2 .box-container .box{
@@ -834,6 +829,17 @@ header .follow a:hover{
 }
 
 @media (max-width:450px){
+
+    label{
+        position: absolute;
+        width: 45px;
+        height: 22px;
+        right: 12px;
+        top: 50px;
+        border: 2px solid;
+        border-radius: 20px;
+        z-index: 1;
+    }
 
     html{
         font-size: 50%;
